@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>girlfriend</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="slider" role="region" aria-label="Image slider">
+    <button class="slider--btn slider--btn__prev" aria-label="Previous slide">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6" />
+      </svg>
+    </button>
+
+    <div class="slides__wrapper">
+      <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide" data-current>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img class="slide--image" src="/image/1.png" alt="Image 1" />
+            </div>
+          </div>
+        </div>
+        <div class="slide__bg" style="--bg: url(/image/1.png); --dir: 0" data-current></div>
+
+        <!-- Slide 2 -->
+        <div class="slide" data-next>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img class="slide--image" src="/image/2.jpg" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+        <div class="slide__bg" style="--bg: url(/im); --dir: 1" data-next></div>
+
+        <!-- Slide 3 -->
+        <div class="slide" data-previous>
+          <div class="slide__inner">
+            <div class="slide--image__wrapper">
+              <img class="slide--image" src="/image/3.png" alt="Image 3" />
+            </div>
+          </div>
+        </div>
+        <div class="slide__bg" style="--bg: url(/image/3.png); --dir: -1" data-previous></div>
+      </div>
+
+      <!-- ส่วนของ slides--infos -->
+      <div class="slides--infos">
+        <!-- Slide Info 1 -->
+        <div class="slide-info" data-current>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text"><span>Sweet Puinuin</span></div>
+              <div data-subtitle class="slide-info--text"><span>Love & Dreams</span></div>
+              <div data-description class="slide-info--text"><span>Every day is filled with love 💕</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Info 2 -->
+        <div class="slide-info" data-next>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text"><span>Hello Puinuin</span></div>
+              <div data-subtitle class="slide-info--text"><span>Pink Paradise</span></div>
+              <div data-description class="slide-info--text"><span>Spread happiness everywhere 🎀</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Info 3 -->
+        <div class="slide-info" data-previous>
+          <div class="slide-info__inner">
+            <div class="slide-info--text__wrapper">
+              <div data-title class="slide-info--text"><span>Lovely Girlfriend</span></div>
+              <div data-subtitle class="slide-info--text"><span>Forever Together</span></div>
+              <div data-description class="slide-info--text"><span>girlfriend make life sweeter 🌸</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider--btn slider--btn__next" aria-label="Next slide">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="loader">
+    <span class="loader__text">0%</span>
+  </div>
+
+
+  <script type="module" src="js.js"></script>
+</body>
+</html>
